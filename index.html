@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text_container">
+        <div class="header">
+          <h3>mortage calculator</h3>
+          <a href="#" class="clear_all">clear all</a>
+        </div>
+        <div class="head_input">
+          <p>mortage amount</p>
+          <div class="info_input">
+            <span class="dolar_sinze">$</span>
+            <input type="number" id="number_value" onkeyup="creatNum()" class="input"/>
+          </div>
+          <p class="error">the result is requered</p>
+        </div>
+        <div class="body_input">
+          <div class="head_input">
+            <p>mortage term</p>
+            <div class="info_input">
+             
+              <input type="number" id="term_value" onkeyup="creatNum()" class="input"/>
+              <span class="situation">years</span>
+            </div>
+            <p class="error">the result is requered</p>
+          </div>
+          <div class="head_input">
+            <p>interet rest</p>
+            <div class="info_input">
+              
+              <input type="number" id="rest_value" onkeyup="creatNum()" class="input"/>
+              <span class="new_situation">%</span>
+            </div>
+            <p class="error">the result is requered</p>
+          </div>
+        </div>
+        <div class="footer_input">
+          <p>mortage type</p>
+          <div class="check_input">
+            <input type="radio" class="input_check" />
+            <h4>repayment</h4>
+          </div>
+          <div class="check_input">
+            <input type="radio" class="input_check" />
+            <h4>interest only</h4>
+          </div>
+        </div>
+        <button class="calculateAll">
+          <img src="assets/images/icon-calculator.svg" alt=""> calculator repayments
+        </button>
+      </div>
+      <div class="result_container">
+       <div class="normale_value">
+        <img src="assets/images/illustration-empty.svg" alt="">
+        <h1>results shown here</h1>
+        <p>complete the form click "calculator repayment" to
+        see what your monthly repayment would be</p>
+       </div>
+       <div class="result_value">
+        <h1>your results</h1>
+        <p>your results are shown below based on the information 
+          you provided to adjust results ,edit the form and click "calculator repayment" again.
+        </p>
+
+        <div class="number_result">
+          <div class="firs_result">
+            <p>your monthly repayment</p>
+            <h1 class="new_ferst_result">$</h1>
+          </div>
+          <div class="second_result">
+            <p>totale youl'll repay over the term</p>
+            <h2 class="new_second_result">$</h2>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <!-- Completed results end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Hicham drakech</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
